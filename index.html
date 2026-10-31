@@ -1,582 +1,164 @@
 <!DOCTYPE html>
-
 <html lang="mr">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-.banner {
-  padding: 0;
-  background: #173e2b;
-}
-
-.banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
+<title>Kokanlens | Discover the Real Konkan</title>
 <style>
-
-* {
-
-  margin: 0;
-
-  padding: 0;
-
-  box-sizing: border-box;
-
-}
-
-body {
-
-  font-family: Arial, sans-serif;
-
-  background: #f8f6ef;
-
-  color: #243b2d;
-
-}
-
-header {
-
-  background: #173e2b;
-
-  color: white;
-
-  padding: 20px;
-
-  text-align: center;
-
-}
-
-header h1 {
-
-  font-size: 32px;
-
-  letter-spacing: 2px;
-
-}
-
-header p {
-
-  margin-top: 8px;
-
-}
-
-nav {
-
-  background: #e9e4d7;
-
-  padding: 15px;
-
-  text-align: center;
-
-}
-
-nav a {
-
-  color: #173e2b;
-
-  text-decoration: none;
-
-  margin: 8px;
-
-  font-weight: bold;
-
-}
-
-.language {
-
-  text-align: right;
-
-  padding: 15px;
-
-}
-
-.language select {
-
-  padding: 10px;
-
-  border-radius: 8px;
-
-  border: 1px solid #ccc;
-
-  background: white;
-
-}
-
-.hero {
-
-  text-align: center;
-
-  padding: 65px 20px;
-
-  background: #dce8d8;
-
-}
-
-.hero h2 {
-
-  font-size: 34px;
-
-  margin-bottom: 15px;
-
-}
-
-.hero p {
-
-  font-size: 18px;
-
-  margin-bottom: 25px;
-
-  line-height: 1.6;
-
-}
-
-.button {
-
-  display: inline-block;
-
-  background: #b65c32;
-
-  color: white;
-
-  padding: 14px 25px;
-
-  border-radius: 8px;
-
-  text-decoration: none;
-
-  font-weight: bold;
-
-}
-
-section {
-
-  padding: 45px 20px;
-
-  text-align: center;
-
-}
-
-section h2 {
-
-  font-size: 28px;
-
-  margin-bottom: 18px;
-
-}
-
-section p {
-
-  line-height: 1.7;
-
-  max-width: 700px;
-
-  margin: auto;
-
-}
-
-.cards {
-
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-
-  gap: 20px;
-
-  max-width: 1000px;
-
-  margin: 30px auto;
-
-}
-
-.card {
-
-  background: white;
-
-  padding: 25px;
-
-  border-radius: 12px;
-
-  box-shadow: 0 3px 12px #00000010;
-
-}
-
-.card h3 {
-
-  margin-bottom: 12px;
-
-}
-
-footer {
-
-  background: #173e2b;
-
-  color: white;
-
-  text-align: center;
-
-  padding: 25px;
-
-  line-height: 1.8;
-
-}
-
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f8f6ef; color: #243b2d; }
+.banner { background: #173e2b; padding: 0; }
+.banner img { width: 100%; height: auto; display: block; }
+nav { background: #e9e4d7; padding: 15px; text-align: center; }
+nav a { color: #173e2b; text-decoration: none; margin: 8px; font-weight: bold; }
+.language { text-align: right; padding: 15px; }
+.language select { padding: 10px; border-radius: 8px; border: 1px solid #ccc; background: white; }
+.hero { text-align: center; padding: 65px 20px; background: #dce8d8; }
+.hero h2 { font-size: 34px; margin-bottom: 15px; }
+.hero p { font-size: 18px; margin-bottom: 25px; line-height: 1.6; }
+.button { display: inline-block; background: #b65c32; color: white; padding: 14px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; }
+section { padding: 45px 20px; text-align: center; }
+section h2 { font-size: 28px; margin-bottom: 18px; }
+section p { line-height: 1.7; max-width: 700px; margin: auto; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1000px; margin: 30px auto; }
+.card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 3px 12px #00000010; }
+.card h3 { margin-bottom: 12px; }
+footer { background: #173e2b; color: white; text-align: center; padding: 25px; line-height: 1.8; }
 @media (max-width: 600px) {
-
-  header h1 {
-
-    font-size: 26px;
-
-  }
-
-  .hero h2 {
-
-    font-size: 27px;
-
-  }
-
-  nav a {
-
-    display: inline-block;
-
-    margin: 7px;
-
-  }
-
+  .hero h2 { font-size: 27px; }
+  nav a { display: inline-block; margin: 7px; }
 }
-
 </style>
-
 </head>
-
 <body>
 
-<header>
-
-  <h1>Kokanlens 🌴</h1>
-
-  <p data-text="tagline">Discover the Real Konkan</p>
-
+<header class="banner">
+  <img src="9E7E3024-67B8-4745-9278-5F36805FB032.png" alt="Kokanlens - Explore The Unexplored">
 </header>
 
 <div class="language">
-
   <select id="language" onchange="changeLanguage()">
-
     <option value="mr">मराठी</option>
-
     <option value="hi">हिंदी</option>
-
     <option value="en">English</option>
-
   </select>
-
 </div>
 
 <nav>
-
   <a href="#home" data-text="home">मुख्यपृष्ठ</a>
-
   <a href="#videos" data-text="videos">व्हिडिओ</a>
-
   <a href="#recipes" data-text="recipes">रेसिपीज</a>
-
   <a href="#explore" data-text="explore">कोकण सफर</a>
-
   <a href="#about" data-text="about">आमच्याबद्दल</a>
-
 </nav>
 
 <div class="hero" id="home">
-
   <h2 data-text="welcome">कोकणाचा अस्सल अनुभव 🌴</h2>
-
-  <p data-text="intro">
-
-    कोकणातील सुंदर निसर्ग, पारंपरिक रेसिपीज
-
-    आणि आपल्या संस्कृतीची सफर!
-
-  </p>
-
-  <a class="button"
-
-     href="https://www.youtube.com/@kokanlens18?sub_confirmation=1"
-
-     target="_blank"
-
-     data-text="subscribe">
-
-     YouTube वर Subscribe करा
-
-  </a>
-
+  <p data-text="intro">कोकणातील सुंदर निसर्ग, पारंपरिक रेसिपीज आणि आपल्या संस्कृतीची सफर!</p>
+  <a class="button" href="https://www.youtube.com/@kokanlens18?sub_confirmation=1" target="_blank" data-text="subscribe">YouTube वर Subscribe करा</a>
 </div>
 
 <section id="videos">
-
   <h2 data-text="videoTitle">🎥 नवीन व्हिडिओ</h2>
-
-  <p data-text="videoDesc">
-
-    आपल्या कोकणातील व्लॉग्स आणि रेसिपीजचे
-
-    नवीन व्हिडिओ येथे पाहा.
-
-  </p>
-
+  <p data-text="videoDesc">आपल्या कोकणातील व्लॉग्स आणि रेसिपीजचे नवीन व्हिडिओ येथे पाहा.</p>
   <div class="cards">
-
     <div class="card">
-
       <h3 data-text="video1">कोकणी व्लॉग्स</h3>
-
       <p data-text="video1Desc">कोकणातील सुंदर क्षण आणि आठवणी.</p>
-
     </div>
-
     <div class="card">
-
       <h3 data-text="video2">पारंपरिक रेसिपीज</h3>
-
       <p data-text="video2Desc">घरगुती आणि अस्सल कोकणी पदार्थ.</p>
-
     </div>
-
   </div>
-
 </section>
 
 <section id="recipes">
-
   <h2 data-text="recipeTitle">🍲 कोकणी रेसिपीज</h2>
-
-  <p data-text="recipeDesc">
-
-    आपल्या कोकणातील पारंपरिक चवींचा आनंद घ्या.
-
-    प्रत्येक रेसिपीमध्ये आहे आपल्या मातीचा सुगंध.
-
-  </p>
-
+  <p data-text="recipeDesc">आपल्या कोकणातील पारंपरिक चवींचा आनंद घ्या. प्रत्येक रेसिपीमध्ये आहे आपल्या मातीचा सुगंध.</p>
 </section>
 
 <section id="explore">
-
-  <h2 data-text="exploreTitle">🌴 Explore Konkan</h2>
-
-  <p data-text="exploreDesc">
-
-    कोकणातील सुंदर समुद्रकिनारे, हिरवीगार
-
-    निसर्गरम्य ठिकाणे आणि संस्कृती जाणून घ्या.
-
-  </p>
-
+  <h2 data-text="exploreTitle">🌴 कोकण सफर</h2>
+  <p data-text="exploreDesc">कोकणातील सुंदर समुद्रकिनारे, हिरवीगार निसर्गरम्य ठिकाणे आणि संस्कृती जाणून घ्या.</p>
 </section>
 
 <section id="about">
-
   <h2 data-text="aboutTitle">आमच्याबद्दल</h2>
-
-  <p data-text="aboutDesc">
-
-    Kokanlens हे कोकणातील व्लॉग्स, पारंपरिक
-
-    रेसिपीज आणि आपल्या संस्कृतीची माहिती
-
-    शेअर करणारे YouTube चॅनेल आहे.
-
-  </p>
-
+  <p data-text="aboutDesc">Kokanlens हे कोकणातील व्लॉग्स, पारंपरिक रेसिपीज आणि आपल्या संस्कृतीची माहिती शेअर करणारे YouTube चॅनेल आहे.</p>
 </section>
 
 <footer>
-
   <p>Kokanlens ❤️</p>
-
   <p data-text="footer">कोकणातून तुमच्यासाठी</p>
-
   <p>© 2026 Kokanlens</p>
-
 </footer>
 
 <script>
-
 const translations = {
-
   mr: {
-
-    tagline: "कोकणाचा अस्सल अनुभव",
-
-    home: "मुख्यपृष्ठ",
-
-    videos: "व्हिडिओ",
-
-    recipes: "रेसिपीज",
-
-    explore: "कोकण सफर",
-
-    about: "आमच्याबद्दल",
-
+    home: "मुख्यपृष्ठ", videos: "व्हिडिओ", recipes: "रेसिपीज", explore: "कोकण सफर", about: "आमच्याबद्दल",
     welcome: "कोकणाचा अस्सल अनुभव 🌴",
-
     intro: "कोकणातील सुंदर निसर्ग, पारंपरिक रेसिपीज आणि आपल्या संस्कृतीची सफर!",
-
     subscribe: "YouTube वर Subscribe करा",
-
     videoTitle: "🎥 नवीन व्हिडिओ",
-
     videoDesc: "आपल्या कोकणातील व्लॉग्स आणि रेसिपीजचे नवीन व्हिडिओ येथे पाहा.",
-
-    video1: "कोकणी व्लॉग्स",
-
-    video1Desc: "कोकणातील सुंदर क्षण आणि आठवणी.",
-
-    video2: "पारंपरिक रेसिपीज",
-
-    video2Desc: "घरगुती आणि अस्सल कोकणी पदार्थ.",
-
+    video1: "कोकणी व्लॉग्स", video1Desc: "कोकणातील सुंदर क्षण आणि आठवणी.",
+    video2: "पारंपरिक रेसिपीज", video2Desc: "घरगुती आणि अस्सल कोकणी पदार्थ.",
     recipeTitle: "🍲 कोकणी रेसिपीज",
-
     recipeDesc: "आपल्या कोकणातील पारंपरिक चवींचा आनंद घ्या. प्रत्येक रेसिपीमध्ये आहे आपल्या मातीचा सुगंध.",
-
     exploreTitle: "🌴 कोकण सफर",
-
     exploreDesc: "कोकणातील सुंदर समुद्रकिनारे, हिरवीगार निसर्गरम्य ठिकाणे आणि संस्कृती जाणून घ्या.",
-
     aboutTitle: "आमच्याबद्दल",
-
     aboutDesc: "Kokanlens हे कोकणातील व्लॉग्स, पारंपरिक रेसिपीज आणि आपल्या संस्कृतीची माहिती शेअर करणारे YouTube चॅनेल आहे.",
-
     footer: "कोकणातून तुमच्यासाठी"
-
   },
-
   hi: {
-
-    tagline: "कोंकण का असली अनुभव",
-
-    home: "होम",
-
-    videos: "वीडियो",
-
-    recipes: "रेसिपी",
-
-    explore: "कोंकण की सैर",
-
-    about: "हमारे बारे में",
-
+    home: "होम", videos: "वीडियो", recipes: "रेसिपी", explore: "कोंकण की सैर", about: "हमारे बारे में",
     welcome: "कोंकण का असली अनुभव 🌴",
-
     intro: "कोंकण की खूबसूरत प्रकृति, पारंपरिक रेसिपी और हमारी संस्कृति की सैर!",
-
     subscribe: "YouTube पर Subscribe करें",
-
     videoTitle: "🎥 नए वीडियो",
-
     videoDesc: "हमारे कोंकण व्लॉग्स और रेसिपी के नए वीडियो यहाँ देखें।",
-
-    video1: "कोंकण व्लॉग्स",
-
-    video1Desc: "कोंकण के खूबसूरत पल और यादें।",
-
-    video2: "पारंपरिक रेसिपी",
-
-    video2Desc: "घर के बने असली कोंकणी व्यंजन।",
-
+    video1: "कोंकण व्लॉग्स", video1Desc: "कोंकण के खूबसूरत पल और यादें।",
+    video2: "पारंपरिक रेसिपी", video2Desc: "घर के बने असली कोंकणी व्यंजन।",
     recipeTitle: "🍲 कोंकणी रेसिपी",
-
     recipeDesc: "कोंकण के पारंपरिक स्वाद का आनंद लें। हर रेसिपी में हमारी मिट्टी की खुशबू है।",
-
     exploreTitle: "🌴 कोंकण की सैर",
-
     exploreDesc: "कोंकण के खूबसूरत समुद्र तट, हरियाली और संस्कृति को जानें।",
-
     aboutTitle: "हमारे बारे में",
-
     aboutDesc: "Kokanlens एक YouTube चैनल है जो कोंकण के व्लॉग्स, पारंपरिक रेसिपी और संस्कृति साझा करता है।",
-
     footer: "कोंकण से आपके लिए"
-
   },
-
   en: {
-
-    tagline: "Discover the Real Konkan",
-
-    home: "Home",
-
-    videos: "Videos",
-
-    recipes: "Recipes",
-
-    explore: "Explore Konkan",
-
-    about: "About Us",
-
+    home: "Home", videos: "Videos", recipes: "Recipes", explore: "Explore Konkan", about: "About Us",
     welcome: "Discover the Real Konkan 🌴",
-
     intro: "Explore the beauty of Konkan, traditional recipes and our rich culture!",
-
     subscribe: "Subscribe on YouTube",
-
     videoTitle: "🎥 Latest Videos",
-
     videoDesc: "Watch our latest Konkan vlogs and traditional recipes here.",
-
-    video1: "Konkan Vlogs",
-
-    video1Desc: "Beautiful moments and memories from Konkan.",
-
-    video2: "Traditional Recipes",
-
-    video2Desc: "Authentic homemade Konkani dishes.",
-
+    video1: "Konkan Vlogs", video1Desc: "Beautiful moments and memories from Konkan.",
+    video2: "Traditional Recipes", video2Desc: "Authentic homemade Konkani dishes.",
     recipeTitle: "🍲 Konkani Recipes",
-
     recipeDesc: "Enjoy the traditional flavours of Konkan. Every recipe carries the aroma of our homeland.",
-
     exploreTitle: "🌴 Explore Konkan",
-
     exploreDesc: "Discover beautiful beaches, lush green landscapes and the culture of Konkan.",
-
     aboutTitle: "About Kokanlens",
-
     aboutDesc: "Kokanlens is a YouTube channel sharing Konkan vlogs, traditional recipes and our rich culture.",
-
     footer: "Made with love in Konkan"
-
   }
-
 };
 
 function changeLanguage() {
-
   const lang = document.getElementById("language").value;
-
   document.documentElement.lang = lang;
-
-  document.querySelectorAll("[data-text]").forEach(element => {
-
-    const key = element.getAttribute("data-text");
-
-    element.textContent = translations[lang][key];
-
+  document.querySelectorAll("[data-text]").forEach(el => {
+    const key = el.getAttribute("data-text");
+    if (translations[lang][key]) el.textContent = translations[lang][key];
   });
-
 }
-
 changeLanguage();
-
 </script>
-
 </body>
-
 </html>
+
